@@ -42,3 +42,7 @@ ul {
   color: red;
   font-size: 30px;
 }
+
+ul li a:hover {
+  color: blue;
+}
