@@ -1,0 +1,136 @@
+body {
+  background: black;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  margin: 20px;
+  max-width: 100%;
+  font-size: 15px;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation:
+    typing 7s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+  0% {
+    border-right: 0.3em solid white;
+  }
+  99% {
+    border-right: 0.3em solid white;
+  }
+  100% {
+    border: none;
+  }
+}
+
+.typewriter2 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing2 7s steps(40, end);
+  animation-delay: 9s;
+  animation-fill-mode: both;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+  0% {
+    border: none;
+  }
+  1% {
+    border-right: 0.3em solid white;
+  }
+  99% {
+    border-right: 0.3em solid white;
+  }
+  100% {
+    border: none;
+  }
+}
+
+.typewriter3 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing3 7s steps(40, end);
+  animation-delay: 17s;
+  animation-fill-mode: both;
+}
+
+@keyframes typing3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+  0% {
+    border: none;
+  }
+  1% {
+    border-right: 0.3em solid white;
+  }
+  99% {
+    border-right: 0.3em solid white;
+  }
+  100% {
+    border: none;
+  }
+}
+
+.typewriter4 {
+  color: green;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing4 3s steps(40, end);
+  animation-delay: 24s;
+  animation-fill-mode: both;
+}
+
+@keyframes typing4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.file {
+  text-decoration: none;
+  font-size: 30px;
+  animation: virus 1s;
+  animation-delay: 25s;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+
+@keyframes virus {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+  0% {
+    color: green;
+  }
+  100% {
+    color: red;
+    opacity: 1;
+  }
+}
