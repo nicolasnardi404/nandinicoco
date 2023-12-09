@@ -28,21 +28,21 @@ p {
   text-shadow: 2px 2px 2px pink;
 }
 
-.images {
+#images {
   display: flex;
   justify-content: center;
   gap: 0px;
   animation: images 10s linear 0s infinite alternate backwards;
 }
 
-.images img {
+#images img {
   width: 80px;
   height: 80px;
   border-radius: 50px;
   cursor: pointer;
 }
 
-.images img:hover {
+#images img:hover {
   animation: images 10s linear 0s 1 backwards;
 }
 
@@ -71,7 +71,7 @@ p {
   margin: 0 auto;
 }
 
-a {
+p a {
   text-decoration: none;
   color: fuchsia;
   cursor: pointer;
@@ -79,7 +79,7 @@ a {
   font-size: 18px;
 }
 
-a:hover {
+p a:hover {
   color: #ff0062;
   background: #00b2ff;
   padding: 2px 5px;
