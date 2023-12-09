@@ -1,0 +1,110 @@
+body {
+  font-family: bit-map;
+  background: #ff0000;
+  text-align: center;
+}
+
+header {
+  text-align: left;
+}
+
+h2 {
+  color: pink;
+}
+
+@font-face {
+  font-family: bit-map;
+  src: url(../fonts/8-bit-pusab.ttf);
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+.typewriter h1:hover {
+  color: orange;
+  background: blue;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.typewriter {
+  color: fuchsia;
+  text-shadow: 5px 5px 5px aqua;
+}
+
+.typewriter h3:hover {
+  background: pink;
+  color: red;
+}
+.typewriter h3 {
+  color: #18e0e3;
+  text-shadow: none;
+}
+
+.ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  border: 50px #ff0077 dotted;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  background: url("../imgs/Spacesheep_thumbnail.png");
+  background-size: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  color: lawngreen;
+}
+
+.ticket:hover {
+  border: 50px rgb(0, 191, 255) dotted;
+  background: url("../imgs/Spacesheep_thumbnail.png");
+  background-size: contain;
+  color: red;
+  text-shadow: 4px 4px 5px aqua;
+}
+
+.ticket a {
+  text-decoration: none;
+  color: aqua;
+  text-shadow: 4px 4px 5px red;
+  background: fuchsia;
+  padding: 10px 10px 15px 12px;
+  border-radius: 5px;
+}
+
+.ticket a:hover {
+  color: red;
+  text-shadow: 4px 4px 5px aqua;
+  background: lawngreen;
+}
