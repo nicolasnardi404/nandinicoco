@@ -130,7 +130,7 @@ function initIndexBuffer(gl) {
   gl.bufferData(
     gl.ELEMENT_ARRAY_BUFFER,
     new Uint16Array(indices),
-    gl.STATIC_DRAW
+    gl.STATIC_DRAW,
   );
 
   return indexBuffer;
@@ -158,7 +158,7 @@ function initTextureBuffer(gl) {
   gl.bufferData(
     gl.ARRAY_BUFFER,
     new Float32Array(textureCoordinates),
-    gl.STATIC_DRAW
+    gl.STATIC_DRAW,
   );
 
   return textureCoordBuffer;
@@ -191,7 +191,7 @@ function initNormalBuffer(gl) {
   gl.bufferData(
     gl.ARRAY_BUFFER,
     new Float32Array(vertexNormals),
-    gl.STATIC_DRAW
+    gl.STATIC_DRAW,
   );
 
   return normalBuffer;
