@@ -31,7 +31,11 @@ p {
   display: flex;
   justify-content: center;
   gap: 0px;
+<<<<<<< HEAD
   animation: images 10s linear 0s infinite alternate backwards;
+=======
+  animation: images 10s linear 0s infinite alternate backwards
+>>>>>>> 61c49269711d58631a2506bcc0f4a1e7ca3d3d92
 }
 
 .images img {
@@ -42,6 +46,7 @@ p {
 }
 
 .images img:hover {
+<<<<<<< HEAD
   animation: images 10s linear 0s 1 backwards;
 }
 
@@ -56,6 +61,21 @@ p {
     transform: translateY(300px) scale(3);
     opacity: 0.2;
   }
+=======
+  animation: images 10s linear 0s 1 backwards
+}
+
+@keyframes images {
+0% {
+  left: 0%;
+  transform: translateY(000px) scale(1);
+  opacity: 1;
+}
+100% {
+  left: 100%;
+  transform: translateY(300px) scale(3);
+  opacity: 0.2;
+>>>>>>> 61c49269711d58631a2506bcc0f4a1e7ca3d3d92
 }
 
 .typewriter {
