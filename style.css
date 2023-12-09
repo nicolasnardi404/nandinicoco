@@ -32,6 +32,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 0px;
+  animation: images 10s linear 0s infinite alternate backwards;
 }
 
 #images img {
