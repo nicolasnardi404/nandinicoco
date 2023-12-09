@@ -1,0 +1,51 @@
+#background {
+  background-image: url("../imgs/nico1.jpg");
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  animation: portrait 10s linear 3s infinite alternate;
+}
+
+@keyframes portrait {
+  33% {
+    background-image: url("../imgs/nico2.jpg");
+  }
+  66% {
+    background-image: url("../imgs/nico3.jpg");
+  }
+  100% {
+    background-image: url("../imgs/nico4.jpg");
+  }
+}
+
+#image-movement {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  align-items: center;
+  border: 10px red;
+  animation: image 10s linear 2s infinite;
+  position: relative;
+  left: 0%;
+  transition: transition 1s;
+  cursor: pointer;
+}
+
+@keyframes image {
+  0% {
+    left: 0%;
+    transform: translateY(000px);
+  }
+  100% {
+    left: 100%;
+    transform: translateY(300px);
+  }
+}
+
+header,
+main {
+  background: lightblue;
+}

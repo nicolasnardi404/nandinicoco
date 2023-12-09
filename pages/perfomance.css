@@ -1,0 +1,27 @@
+body {
+  font-family: bit-map;
+}
+canvas {
+  width: 100%;
+  background: blue;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  color: fuchsia;
+  text-align: center;
+}
+
+p {
+  color: red;
+}
+
+@font-face {
+  font-family: bit-map;
+  src: url(../fonts/8-bit-pusab.ttf);
+}
