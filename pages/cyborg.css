@@ -1,40 +1,41 @@
 body {
-    font-family: bit-map;
-    background: #FF0000;
+  font-family: bit-map;
+  background: #ff0000;
 }
 
-h1, h3{
-    text-align: center;
+h1,
+h3 {
+  text-align: center;
 }
 
-h3{
-    color:fuchsia
+h3 {
+  color: fuchsia;
 }
-h1{
-    color: #D9FF00;
-    text-shadow: 0px 0px 5px blue;
-}
-
-iframe{
-    width: 100%;
-    height: 100%;
+h1 {
+  color: #d9ff00;
+  text-shadow: 0px 0px 5px blue;
 }
 
-p{
-    font-size: 20px;
-    text-shadow: 5px 5px 10px aqua;
-    color: blue;
-    background: yellow;
-    padding: 20px;
-    border-radius: 10px
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-size: 20px;
+  text-shadow: 5px 5px 10px aqua;
+  color: blue;
+  background: yellow;
+  padding: 20px;
+  border-radius: 10px;
 }
 @font-face {
-    font-family: bit-map;
-    src: url(../8-bit-pusab.ttf);
-  }
+  font-family: bit-map;
+  src: url(../fonts/8-bit-pusab.ttf);
+}
 
-.artist{
-    text-shadow: 5px 5px 10px pink;
-    color: yellow;
-    background: blue;
-  }
+.artist {
+  text-shadow: 5px 5px 10px pink;
+  color: yellow;
+  background: blue;
+}
