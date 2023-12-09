@@ -1,64 +1,112 @@
-body{
-    font-family: bit-map;
-}
-canvas {
-    width: 100%;
-    background: blue;
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-header {
-    color:fuchsia;
-    text-align: center;
-}
-
-p {
-    color: red;
+body {
+  font-family: bit-map;
 }
 
 @font-face {
-    font-family: bit-map;
-    src: url(8-bit-pusab.ttf);
-  }
+  font-family: bit-map;
+  src: url(/fonts/8-bit-pusab.ttf);
+}
 
-  .typewriter h3:hover {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(0, 119, 255); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(0, 221, 255); }
-  }
+header {
+  color: fuchsia;
+  text-align: center;
+}
 
-  .typed-out{
+canvas {
+  width: 100%;
+  background: blue;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+p {
+  color: red;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  animation: images 10s linear 0s infinite alternate backwards
+}
+
+.images img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.images img:hover {
+  animation: images 10s linear 0s 1 backwards
+}
+
+@keyframes images {
+0% {
+  left: 0%;
+  transform: translateY(000px) scale(1);
+  opacity: 1;
+}
+100% {
+  left: 100%;
+  transform: translateY(300px) scale(3);
+  opacity: 0.2;
+}
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: blue;
+}
+
+.typewriter h3:hover {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: fuchsia;
+  cursor: pointer;
+  text-shadow: 2px 2px 1px blue;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #ff0062;
+  background: #00b2ff;
+  padding: 2px 5px;
+  text-shadow: 0px 0px 2px #40ff00;
+  border-radius: 5px;
+  border: 1px solid red;
+  animation: links 5s linear 0s infinite;
+  margin: 3px;
+}
+
+@keyframes links {
+  0% {
+    background: #00b2ff;
+    color: #ff0062;
+  }
+  25% {
+    background: lightgreen;
     color: blue;
   }
-
-.typed-out {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-   }
-   
-
-   
+  50% {
+    background: red;
+    color: rgb(255, 225, 0);
+  }
+  75% {
+    background: fuchsia;
+    color: lightgreen;
+  }
+  100% {
+    background: #00b2ff;
+    color: #ff0062;
+  }
+}
