@@ -40,21 +40,24 @@ p {
   height: 80px;
   border-radius: 50px;
   cursor: pointer;
+  animation: images 10s linear 0s infinite backwards backwards;
+  filter: saturate(3);
 }
 
 #images img:hover {
   animation: images 10s linear 0s 1 backwards;
+  filter: invert(100%);
 }
 
 @keyframes images {
   0% {
     left: 0%;
-    transform: translateY(000px) scale(1);
+    transform: translateY(000px) scale(1) rotate(0deg);
     opacity: 1;
   }
   100% {
     left: 100%;
-    transform: translateY(300px) scale(3);
+    transform: translateY(300px) scale(3) rotate(359deg);
     opacity: 0.2;
   }
 }
