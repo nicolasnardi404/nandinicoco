@@ -108,3 +108,7 @@ h2 {
   text-shadow: 4px 4px 5px aqua;
   background: lawngreen;
 }
+
+a {
+  color: inherit;
+}

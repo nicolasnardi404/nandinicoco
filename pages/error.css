@@ -134,3 +134,8 @@ body {
     opacity: 1;
   }
 }
+
+a {
+  text-decoration: none;
+  color: red;
+}

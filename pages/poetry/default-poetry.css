@@ -22,3 +22,12 @@ pre {
     font-size: 0.8rem;
   }
 }
+
+a {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 0, 0);
+}
