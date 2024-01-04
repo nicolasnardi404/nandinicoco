@@ -78,3 +78,13 @@ p {
   align-items: center;
   margin: 20px;
 }
+
+a {
+  text-decoration: none;
+  color: fuchsia;
+  text-shadow: 3px 3px 3px lightgreen;
+}
+
+a:visited {
+  color: fuchsia;
+}
