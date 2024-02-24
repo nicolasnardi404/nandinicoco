@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 const link = document.getElementById("link");
 
 let pages = [
@@ -13,7 +15,6 @@ function callLink() {
   let randomNumber = Math.floor(Math.random() * pages.length);
   let pageLink = pages[randomNumber];
   link.href = pageLink;
-  console.log("hello world");
 }
 
 link.addEventListener("click", function () {
